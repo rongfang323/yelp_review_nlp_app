@@ -1,14 +1,10 @@
 from __future__ import print_function
 
-import argparse
-import json
+
 import pprint
 import requests
-import sys
-import urllib
-from urllib.error import HTTPError
 from urllib.parse import quote
-from urllib.parse import urlencode
+
 
 # https://www.yelp.com/developers/v3/manage_app
 API_KEY = "eodOQWVJgaWafI_8U3a7k_rlGICn6OiQrpAyrCgQiJlH9D5oYAgG0shDw3cj1glQeQJnb7Mp86ACaPmK7Rc45RH6L5Mla3c6c2x_jTNLzLm9STg6Rwy28aPr0q4UX3Yx"

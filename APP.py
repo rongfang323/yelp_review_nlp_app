@@ -1,21 +1,29 @@
 #import request as request
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from yelpRequest import query_api, requestReviews, get_business, BUSINESS_PATH, API_KEY, API_HOST
 from topic_sentiment_classifier import TopicSentimental, OrderBusiness, BayesianSmooth, OrderBusiness_new
 import pandas as pd
 
-app = Flask(__name__)
 
+
+app = Flask(__name__)
+app.debug = True
 
 @app.route('/')
 def index():
+
     return render_template('index.html')
 
 """Once users input the terms for restaurant searching, 
    the web return a list of searched result"""
 
+
+
+
 @app.route('/listings', methods=['POST'])
 def search_results():
+
+
 
     cateInput = request.form['category_search']
     locInput = request.form['location_search']
@@ -138,10 +146,11 @@ def demo():
     business_demo = pd.read_csv('business_review_demo.csv')
 
     if request.method == 'POST':
-       business_demo = pd.read_csv('business_review_demo.csv')
+
        cateInput = request.form['category_search']
        locInput = request.form['location_search']
        topSelect = request.form['orderByValSelected']
+
        print('there')
     # return the search results
     else:
@@ -296,6 +305,7 @@ def demo():
                            address13=address[12], address14=address[13], address15=address[14],
                            address16=address[15], address17=address[16], address18=address[17]
                            )
+
 
 
 @app.route('/About')
