@@ -29,16 +29,7 @@
       <change afterPath="$PROJECT_DIR$/../templates/personal_profile.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../topic_classifer.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../topic_sentiment_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP.py" beforeDir="false" afterPath="$PROJECT_DIR$/APP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/trending/trending-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/trending/trending-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/trending/trending-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/trending/trending-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/trending/trending-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/trending/trending-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/trending/trending-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/trending/trending-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topic_classifer.py" beforeDir="false" afterPath="$PROJECT_DIR$/topic_classifer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yelpRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/yelpRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
