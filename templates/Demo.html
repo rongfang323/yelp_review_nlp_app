@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Directory | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/font-awesome.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/flaticon.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/nice-select.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.carousel.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/magnific-popup.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/slicknav.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style_listings.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section listings">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="./index.html"><img src="{{url_for('static', filename='img/logo.png')}}" alt=""></a>
+            </div>
+            <nav class="main-menu mobile-menu">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">Explore</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('personal_profile') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Map Section Begin -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26440.72384129847!2d-118.24906619231132!3d34.06719475913053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c659f50c318d%3A0xe2ffb80a9d3820ae!2sChinatown%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1570213740685!5m2!1sen!2sbd"
+            height="657" style="border:0;" allowfullscreen="">
+        </iframe>
+        <img src="img/pin.png" alt="">
+    </div>
+    <!-- Map Section End -->
+
+    <!-- Search Filter Section Begin -->
+
+
+
+
+<section class="search-filter spad">
+                    <p style="font-size: 36px", align="center">{{search_result_text}}</p>
+                     <form method="POST" action='/Demo' >
+                            <div class="navbar">
+                            <div>
+                                <h5>Search Category</h5>
+                            <select name="category_search" >
+                                <option>Chinese</option>
+                                <option>Mexican</option>
+                                <option>Italian</option>
+                            </select>
+                            </div>
+                            <div >
+                                <h5>Your Location</h5>
+                            <select name="location_search" >
+                                <option>Phoenix, AZ</option>
+                                <option>Pittsburgh, PA</option>
+                            </select>
+                            </div>
+                            <div >
+                                <h5>Sorting By</h5>
+                                <select  name="orderByValSelected" >
+                                    <option>Star Rating</option>
+                                    <option>Food</option>
+                                    <option>Service</option>
+                                    <option>Atmosphere</option>
+                                    <option>Value for Food</option>
+                                    <option>Value for Overall Experience</option>
+                                </select>
+                            </div>
+                            <button type="submit">Search Now</button>
+                                 </div>
+                        </form>
+
+</section>
+
+    <!-- Search Filter Section End -->
+
+    <!-- Filter Section Begin -->
+    <section class="filter-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="filter-left">
+                        <div class="category-filter">
+                            <h3>Category Filter</h3>
+                            <div class="category-option">
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label class="active">Restaurants</label>
+                                </div>
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label>Hotels</label>
+                                </div>
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label>Resorts & spa</label>
+                                </div>
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label>Bars & Pubs</label>
+                                </div>
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label>Clubs</label>
+                                </div>
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label>Shopping Malls</label>
+                                </div>
+                                <div class="co-item">
+                                    <input type="radio">
+                                    <label>Education</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating-filter">
+                            <h3>Ratings</h3>
+                            <div class="rating-option">
+                                <div class="ro-item">
+                                    <input type="radio">
+                                    <label class="active">5.0</label>
+                                    <div class="rating-pic">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="ro-item">
+                                    <input type="radio">
+                                    <label>4.0</label>
+                                    <div class="rating-pic">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                    </div>
+                                </div>
+                                <div class="ro-item">
+                                    <input type="radio">
+                                    <label>3.0</label>
+                                    <div class="rating-pic">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                    </div>
+                                </div>
+                                <div class="ro-item">
+                                    <input type="radio">
+                                    <label>2.0</label>
+                                    <div class="rating-pic">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                    </div>
+                                </div>
+                                <div class="ro-item">
+                                    <input type="radio">
+                                    <label>1.0</label>
+                                    <div class="rating-pic">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                        <i class="fa fa-star grey-bg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="distance-filter">
+                            <h3>Distance</h3>
+                            <div class="distance-option">
+                                <div class="do-item">
+                                    <input type="radio">
+                                    <label class="active">0.0-0.3km</label>
+                                </div>
+                                <div class="do-item">
+                                    <input type="radio">
+                                    <label>0.3-0.6km</label>
+                                </div>
+                                <div class="do-item">
+                                    <input type="radio">
+                                    <label>0.6-0.9km</label>
+                                </div>
+                                <div class="do-item">
+                                    <input type="radio">
+                                    <label>1.0-3.0km</label>
+                                </div>
+                                <div class="do-item">
+                                    <input type="radio">
+                                    <label>3.0-10.0km</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp1}}>
+                                <div class="arrange-pic">
+                                    <img src={{url1}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate1}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name1}}</h5>
+                                    <span>{{address1}}</span>
+
+                                    <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review1_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review1_down}}</p>
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp2}} >
+                                <div class="arrange-pic">
+                                    <img src={{url2}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate2}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name2}}</h5>
+                                    <span>{{address2}}</span>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review2_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review2_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp3}} >
+                                <div class="arrange-pic">
+                                    <img src={{url3}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate3}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name3}}</h5>
+                                    <span>{{address3}}</span>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review3_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review3_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp4}} >
+                                <div class="arrange-pic">
+                                    <img src={{url4}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate4}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name4}}</h5>
+                                    <span>{{address4}}</span>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review4_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review4_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp5}} >
+                                <div class="arrange-pic">
+                                    <img src={{url5}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate5}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name5}}</h5>
+                                    <span>{{address5}}</span>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review5_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review5_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp6}} >
+                                <div class="arrange-pic">
+                                    <img src={{url6}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate6}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name6}}</h5>
+                                    <span>{{address6}}</span>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review6_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review6_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp7}} >
+                                <div class="arrange-pic">
+                                    <img src={{url7}} alt="" width='400' height='250'>
+                                    <div class="rating">{{rate7}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name7}}</h5>
+                                    <span>{{address7}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review7_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review7_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp8}}>
+                                <div class="arrange-pic">
+                                    <img src={{url8}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate8}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name8}}</h5>
+                                    <span>{{address8}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review8_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review8_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp9}}>
+                                <div class="arrange-pic">
+                                    <img src={{url9}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate9}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name9}}</h5>
+                                    <span>{{address9}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review9_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review9_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp10}}>
+                                <div class="arrange-pic">
+                                    <img src={{url10}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate10}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name10}}</h5>
+                                    <span>{{address10}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review10_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review10_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp11}}>
+                                <div class="arrange-pic">
+                                    <img src={{url11}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate11}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name11}}</h5>
+                                    <span>{{address11}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review11_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review11_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp12}}>
+                                <div class="arrange-pic">
+                                    <img src={{url12}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate12}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name12}}</h5>
+                                    <span>{{address12}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                     {{review12_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review12_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp13}}>
+                                <div class="arrange-pic">
+                                    <img src={{url13}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate13}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name13}}</h5>
+                                    <span>{{address13}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review13_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review13_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp14}}>
+                                <div class="arrange-pic">
+                                    <img src={{url14}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate14}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name14}}</h5>
+                                    <span>{{address14}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review14_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review14_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp15}}>
+                                <div class="arrange-pic">
+                                    <img src={{url15}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate15}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name15}}</h5>
+                                    <span>{{address15}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review15_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review15_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp16}}>
+                                <div class="arrange-pic">
+                                    <img src={{url16}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate16}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name16}}</h5>
+                                    <span>{{address16}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review16_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review16_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp17}}>
+                                <div class="arrange-pic">
+                                    <img src={{url17}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate17}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name17}}</h5>
+                                    <span>{{address17}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review17_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review17_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="arrange-items" href={{ulr_yelp18}}>
+                                <div class="arrange-pic">
+                                    <img src={{url18}} alt=""  width='400' height='250'>
+                                    <div class="rating">{{rate18}}</div>
+                                    <div class="tic-text">Restaurants</div>
+                                </div>
+                                <div class="arrange-text">
+                                    <h5>{{name18}}</h5>
+                                    <span>{{address18}}</span>
+                                     <p><img src="{{url_for('static', filename='img/thumbs_up.png')}}" width='25' height='30'>
+                                    {{review18_up}}</p>
+                                    <p><img src="{{url_for('static', filename='img/thumbs_down.png')}}" width='25' height='30'>
+                                    {{review18_down}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 text-right">
+                            <div class="pagination-num">
+                                <a href="#">01</a>
+                                <a href="#">02</a>
+                                <a href="#">03</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Filter Section End -->
+
+    <!-- Footer Section Begin -->
+   <footer class="footer-section spad">
+        <div class="container">
+                <div class="col-lg-5 order-2 order-lg-1">
+                    <div class="copyright"><p class="text-white">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p></div>
+                </div>
+            </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{{url_for('static', filename = 'js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.slicknav.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/mixitup.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+
+</body>
+
+</html>

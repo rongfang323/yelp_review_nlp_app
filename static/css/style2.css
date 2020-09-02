@@ -1,0 +1,149 @@
+/* Style the navigation menu */
+.navbar {
+    width:60%;
+    margin: auto;
+    padding: 38px 38px 38px;
+	position: relative;
+	z-index: 1;
+}
+
+.navbar:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+    width: 100%;
+	height: 100%;
+	background: #fff;
+	content: "";
+	opacity: 0.43;
+	z-index: -1;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #4CAF50;
+}
+/* Style the font */
+.navbar h5 {
+            color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	margin-bottom: 12px;
+        }
+
+.navbar-text h1 {
+    align: center;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
+	font-family: "Sofia";
+	margin-bottom: 34px;
+}
+
+.navbar button {
+	color: #fff;
+	background: #FF5581;
+	font-size: 16px;
+	height:50px;
+	width: 200px;
+	cursor: pointer;
+	border: 1px solid #FF5581;
+    top: 15px;
+	position: relative;
+}
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+/*@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+ /* }*/
+/*}*/
+/*/
+
+/*---------------------------------
+  Search Filter for page listings
+---------------------------------*/
+.search-listings {
+    width:60%;
+    margin: auto;
+    padding: 38px 38px 38px;
+	position: relative;
+	z-index: 1;
+}
+.search-listings:after {
+	position: relative;
+	left: 0;
+	top: 0;
+    width: 100%;
+	height: 100%;
+	background: #696969;
+	content: "";
+	opacity: 0.43;
+	z-index: -1;
+}
+
+/* Navigation links */
+.search-listings a {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.search-listings a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.search-listings a.active {
+  background-color: #4CAF50;
+}
+/* Style the font */
+.search-listings h5 {
+            color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	margin-bottom: 12px;
+        }
+
+.search-listings button {
+	color: #fff;
+	background: #FF5581;
+	font-size: 16px;
+	height:50px;
+	width: 200px;
+	cursor: pointer;
+	border: 1px solid #FF5581;
+    top: 15px;
+	position: relative;
+}
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .search-listings a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}

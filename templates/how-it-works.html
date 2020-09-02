@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Directory | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/font-awesome.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/flaticon.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/nice-select.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/owl.carousel.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/magnific-popup.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/slicknav.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" type="text/css"/>
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section listings">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <nav class="main-menu mobile-menu">
+                <<ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('how_it_works') }}">Explore</a></li>
+                    <li><a href="{{ url_for('demo') }}">Demo</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('personal_profile') }}">Contact me</a></li>
+                </ul>
+            </nav>
+
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <div class="hero-listing set-bg" data-setbg="{{url_for('static', filename = 'img/how-it-works-bg.jpg')}}">
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- How It Works Begin -->
+    <section class="howitworks-section spad">
+        <div class="container">
+            <div class="row mb-110">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="howit-item">
+                        <h2>How to use this app</h2>
+                        <p> 1. Type the service category you are interested in.
+                        <br>2. Type the location you are at.
+                        <br>3. Choose the most important service feature for you.
+                        <br>4. Submit the request.
+                        <br>5. The recommendation list will tell you the true opinions inside the reviews.
+                        </p>
+                    </div>
+                    <a href="{{ url_for('index') }}" class="primary-btn">Try it</a>
+                </div>
+                <div class="col-lg-5 offset-lg-1 order-1 order-lg-2">
+                    <div class="howit-img">
+                        <img src="{{url_for('static', filename = 'img/how-it-works-1.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-110">
+                <div class="col-lg-5">
+                    <div class="howit-img insige-bg">
+                        <img src="{{url_for('static', filename = 'img/how-it-works-2.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="howit-item">
+                        <h2>Latent Dirichlet allocation for classifying reviews</h2>
+                        <p>A <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet allocation(LDA)</a> model was developed from over 300000 restaurant reviews provided by <a href="https://www.yelp.com/dataset">Yelp open dataset</a>. Reviews were classified as composition of seven restaurant related topics. Each topic was interpreted base on the most important words defining the topic class. </p>
+                    </div>
+                    <a href="{{ url_for('about') }}" class="primary-btn">Explore more</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="howit-item">
+                        <h2>Sentimental analysis</h2>
+                        <p>Bag of words model was developed Multinomial Naive Bayes classifier for positive and negative sentiment of review regarding a specific topic. </p>
+                    </div>
+                    <a href="{{ url_for('demo') }}" class="primary-btn">Look at our demo</a>
+                </div>
+                <div class="col-lg-4 offset-lg-1 order-1 order-lg-2">
+                    <div class="howit-img last-img">
+                        <img src="{{url_for('static', filename = 'img/how-it-works-3.png')}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="howit-bg">
+                <img src="img/howit-bg.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- How It Works End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section spad">
+        <div class="container">
+                <div class="col-lg-5 order-2 order-lg-1">
+                    <div class="copyright"><p class="text-white">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p></div>
+                </div>
+            </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+   <script src="{{url_for('static', filename = 'js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.slicknav.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/mixitup.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+</body>
+
+</html>
