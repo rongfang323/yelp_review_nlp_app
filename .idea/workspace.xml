@@ -31,13 +31,8 @@
       <change afterPath="$PROJECT_DIR$/../topic_sentiment_classifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/About.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/how-it-works.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/how-it-works.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/personal_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/personal_profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,22 +131,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1599086723339" />
-    <state width="1825" height="295" key="GridCell.Tab.0.bottom" timestamp="1599097867974">
+    <state width="1825" height="295" key="GridCell.Tab.0.bottom" timestamp="1599100247244">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="295" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1599097867974" />
-    <state width="1825" height="295" key="GridCell.Tab.0.center" timestamp="1599097867974">
+    <state width="1825" height="295" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1599100247244" />
+    <state width="1825" height="295" key="GridCell.Tab.0.center" timestamp="1599100247243">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="295" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1599097867974" />
-    <state width="1825" height="295" key="GridCell.Tab.0.left" timestamp="1599097867973">
+    <state width="1825" height="295" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1599100247243" />
+    <state width="1825" height="295" key="GridCell.Tab.0.left" timestamp="1599100247243">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="295" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1599097867973" />
-    <state width="1825" height="295" key="GridCell.Tab.0.right" timestamp="1599097867974">
+    <state width="1825" height="295" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1599100247243" />
+    <state width="1825" height="295" key="GridCell.Tab.0.right" timestamp="1599100247243">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="295" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1599097867974" />
+    <state width="1825" height="295" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1599100247243" />
     <state x="523" y="208" width="1022" height="737" key="SettingsEditor" timestamp="1599082496477">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
