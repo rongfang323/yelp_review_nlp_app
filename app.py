@@ -9,7 +9,7 @@ import os
 
 
 app = Flask(__name__)
-app.debug = True
+
 
 @app.route('/favicon.ico', methods = ['GET'])
 def favicon():
