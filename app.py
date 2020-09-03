@@ -1,8 +1,10 @@
 #import request as request
-from flask import Flask, render_template, request, flash
+
+from flask import Flask, render_template, request, flash, send_from_directory
 from yelpRequest import query_api, requestReviews, get_business, BUSINESS_PATH, API_KEY, API_HOST
 from topic_sentiment_classifier import TopicSentimental, OrderBusiness, BayesianSmooth, OrderBusiness_new
 import pandas as pd
+import os
 
 
 
@@ -20,7 +22,7 @@ def index():
 
 
 
-@app.route('/listings', methods=['POST'])
+@app.route('/listings', methods=['GET','POST'])
 def search_results():
 
 
@@ -316,10 +318,14 @@ def about():
 def personal_profile():
     return render_template('personal_profile.html')
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='img/favicon.png')
 
 
 if __name__ == '__main__':
-    app.run(port=33568, debug=True)
+    app.run()
 
 
 
