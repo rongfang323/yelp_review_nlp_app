@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/yelp_refined_review_rite.iml" filepath="$PROJECT_DIR$/.idea/yelp_refined_review_rite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yelp_review_nlp_app.iml" filepath="$PROJECT_DIR$/.idea/yelp_review_nlp_app.iml" />
     </modules>
   </component>
 </project>
