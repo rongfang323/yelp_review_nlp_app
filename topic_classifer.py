@@ -1,13 +1,13 @@
 import gensim
 import re
 import spacy
-
+import en_core_web_sm
 from spacy.lang.en import English
 
 
 
-nlp = spacy.load("en_core_web_lg")
-#nlp = en_core_web_sm.load(disable=['parser','ner'])
+#nlp = spacy.load("en_core_web_lg")
+nlp = en_core_web_sm.load(disable=['parser','ner'])
 lda_model7=gensim.models.ldamodel.LdaModel.load("nlp_models/lda_model_7_30Percent")
 
 def my_lemmatizer(doc):
